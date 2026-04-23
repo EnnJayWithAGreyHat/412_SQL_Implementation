@@ -1,0 +1,331 @@
+
+Error starting at line 1 in command:
+xs-- create tables
+Error report:
+Unknown Command
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+CREATE TABLE succeeded.
+No Errors.
+DESC student
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+USERNAME                       NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+STUDENTID                      NOT NULL NUMBER                                                                                                                                                                                        
+MAJOR                          NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+DATEJOINED                     NOT NULL DATE                                                                                                                                                                                          
+
+DESC university
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+UNIVID                         NOT NULL NUMBER                                                                                                                                                                                        
+UNAME                          NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+
+DESC course
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+COURSEID                       NOT NULL VARCHAR2(10)                                                                                                                                                                                  
+TEACHER                                 VARCHAR2(20)                                                                                                                                                                                  
+SEMESTER                                VARCHAR2(10)                                                                                                                                                                                  
+YEAR                                    NUMBER                                                                                                                                                                                        
+
+DESC documents
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+DID                            NOT NULL NUMBER                                                                                                                                                                                        
+DTYPE                          NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+DGRADE                         NOT NULL CHAR(1)                                                                                                                                                                                       
+DNAME                          NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+
+DESC enrolled
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+ENROLLEDUSERNAME               NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+ENROLLEDUNIVID                 NOT NULL NUMBER                                                                                                                                                                                        
+ENROLLDATE                              DATE                                                                                                                                                                                          
+
+DESC offers
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+OFFERSUNIVID                   NOT NULL NUMBER                                                                                                                                                                                        
+OFFERSCOURSEID                 NOT NULL VARCHAR2(10)                                                                                                                                                                                  
+
+DESC uploaded
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+UPLOADUSERNAME                 NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+UPLOADDOCUMENTID               NOT NULL NUMBER                                                                                                                                                                                        
+UPLOADDATE                              DATE                                                                                                                                                                                          
+
+DESC contains
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+CONTAINSDOCUMENTID             NOT NULL NUMBER                                                                                                                                                                                        
+CONTAINSCOURSEID               NOT NULL VARCHAR2(10)                                                                                                                                                                                  
+
+DESC downloaded_courses
+Name                           Null     Type                                                                                                                                                                                          
+------------------------------ -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+DOWNUSERNAME                   NOT NULL VARCHAR2(20)                                                                                                                                                                                  
+DOWNCOURSEID                   NOT NULL VARCHAR2(10)                                                                                                                                                                                  
+DOWNDATE                                DATE                                                                                                                                                                                          
+
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+1 rows inserted
+USERNAME             STUDENTID              MAJOR                DATEJOINED                
+-------------------- ---------------------- -------------------- ------------------------- 
+John Smith           123456789              cse                  02-FEB-95                 
+Franklin Johns       333445555              his                  01-DEC-02                 
+Alicia Keys          999887777              cem                  11-JAN-99                 
+Jennifer Ortiz       987654321              bio                  05-NOV-11                 
+Ramesh Fahr          666884444              cse                  04-JUL-99                 
+Joyce Jones          453453453              mat                  04-OCT-05                 
+Ahmad Rashad         987987987              art                  06-OCT-10                 
+James Kenedy         888665555              eee                  12-SEP-01                 
+8 rows selected
+
+UNIVID                 UNAME                
+---------------------- -------------------- 
+1                      ASU                  
+2                      NAU                  
+3                      MCC                  
+4                      SCC                  
+5                      GCC                  
+6                      UOA                  
+7                      CAL                  
+8                      BYU                  
+8 rows selected
+
+COURSEID   TEACHER              SEMESTER   YEAR                   
+---------- -------------------- ---------- ---------------------- 
+CSE110     Bob Simms            Spring     2001                   
+BIO213     Roger Harris         Fall       2003                   
+CEM352     Tim Young            Fall       1999                   
+MAT234     Ross Wilkins         Summer     2009                   
+CSE450     Eddie Page           Summer     2008                   
+HIS120     Matt Rawlings        Fall       2008                   
+COM101     Josh Hill            Fall       2007                   
+MAT340     Tony Flores          Spring     2009                   
+8 rows selected
+
+DID                    DTYPE                DGRADE DNAME                
+---------------------- -------------------- ------ -------------------- 
+1                      Homework             A      hwk 1.1              
+2                      Test                 B      Test 1               
+3                      Quiz                 C      Quiz 3               
+4                      Homework             B      hwk 3.2              
+5                      Homework             A      hwk 3.4              
+6                      Test                 A      Test1                
+7                      Test                 D      Test2                
+8                      Test                 B      Test2                
+9                      Homework             B      hwk 5.4              
+10                     Quiz                 C      Quiz 2               
+
+10 rows selected
+
+ENROLLEDUSERNAME     ENROLLEDUNIVID         ENROLLDATE                
+-------------------- ---------------------- ------------------------- 
+John Smith           4                      02-FEB-95                 
+Franklin Johns       4                      01-DEC-02                 
+Alicia Keys          7                      11-JAN-99                 
+Jennifer Ortiz       1                      05-NOV-11                 
+Ramesh Fahr          8                      04-JUL-99                 
+Joyce Jones          2                      04-OCT-05                 
+Ahmad Rashad         2                      06-OCT-10                 
+James Kenedy         6                      12-SEP-01                 
+8 rows selected
+
+OFFERSUNIVID           OFFERSCOURSEID 
+---------------------- -------------- 
+5                      COM101         
+2                      CSE110         
+4                      CSE450         
+6                      CSE450         
+3                      HIS120         
+7                      HIS120         
+1                      MAT234         
+8                      MAT340         
+8 rows selected
+
+UPLOADUSERNAME       UPLOADDOCUMENTID       UPLOADDATE                
+-------------------- ---------------------- ------------------------- 
+John Smith           1                      02-FEB-95                 
+Alicia Keys          2                      04-DEC-99                 
+Alicia Keys          3                      05-DEC-99                 
+James Kenedy         4                      15-SEP-01                 
+John Smith           5                      21-JAN-02                 
+John Smith           6                      22-JAN-02                 
+Franklin Johns       7                      30-DEC-02                 
+James Kenedy         8                      12-JAN-03                 
+Joyce Jones          9                      04-OCT-05                 
+Joyce Jones          10                     05-OCT-05                 
+
+10 rows selected
+
+CONTAINSDOCUMENTID     CONTAINSCOURSEID 
+---------------------- ---------------- 
+1                      MAT234           
+2                      CSE110           
+3                      HIS120           
+4                      CSE450           
+5                      COM101           
+6                      CSE450           
+7                      HIS120           
+8                      MAT340           
+8 rows selected
+
+DOWNUSERNAME         DOWNCOURSEID DOWNDATE                  
+-------------------- ------------ ------------------------- 
+John Smith           MAT234       02-FEB-95                 
+Franklin Johns       CSE110       01-DEC-02                 
+Alicia Keys          HIS120       11-JAN-99                 
+Jennifer Ortiz       CSE450       05-NOV-11                 
+Ramesh Fahr          COM101       04-JUL-99                 
+Joyce Jones          CSE450       04-OCT-05                 
+Ahmad Rashad         HIS120       06-OCT-10                 
+James Kenedy         MAT340       12-SEP-01                 
+8 rows selected
+
+USERNAME             UPLOADDOCUMENTID       
+-------------------- ---------------------- 
+Alicia Keys          2                      
+Alicia Keys          3                      
+Franklin Johns       7                      
+James Kenedy         4                      
+James Kenedy         8                      
+John Smith           1                      
+John Smith           5                      
+John Smith           6                      
+Joyce Jones          9                      
+Joyce Jones          10                     
+
+10 rows selected
+
+DID                    DTYPE                DNAME                
+---------------------- -------------------- -------------------- 
+1                      Homework             hwk 1.1              
+2                      Test                 Test 1               
+3                      Quiz                 Quiz 3               
+4                      Homework             hwk 3.2              
+5                      Homework             hwk 3.4              
+6                      Test                 Test1                
+8                      Test                 Test2                
+9                      Homework             hwk 5.4              
+10                     Quiz                 Quiz 2               
+
+9 rows selected
+
+USERNAME             MAJOR                
+-------------------- -------------------- 
+Ahmad Rashad         art                  
+Alicia Keys          cem                  
+Franklin Johns       his                  
+James Kenedy         eee                  
+Jennifer Ortiz       bio                  
+John Smith           cse                  
+Joyce Jones          mat                  
+Ramesh Fahr          cse                  
+8 rows selected
+
+USERNAME             STUDENTID              
+-------------------- ---------------------- 
+John Smith           123456789              
+Ramesh Fahr          666884444              
+
+ DROP TABLE enrolled succeeded.
+ DROP TABLE contains succeeded.
+ DROP TABLE offers succeeded.
+ DROP TABLE uploaded succeeded.
+ DROP TABLE downloaded_courses succeeded.
+ DROP TABLE student succeeded.
+ DROP TABLE course succeeded.
+ DROP TABLE university succeeded.
+ DROP TABLE documents succeeded.
